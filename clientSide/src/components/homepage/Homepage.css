@@ -1,0 +1,32 @@
+.background {
+  object-fit: cover;
+  width: 100%;
+}
+.homepageWrapper {
+  background: hsl(209, 61%, 16%);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.testwrapper {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+.testText {
+  color: hsl(213, 33%, 89%);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
