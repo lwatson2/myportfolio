@@ -14,37 +14,48 @@ export default class NavBar extends Component {
   render() {
     const { showNav } = this.state;
     return (
-      <div className={showNav ? "navbar " : "navbar navbar-closed"}>
+      <nav className={showNav ? "navbar " : "navbar navbar-closed"}>
         <button className="navbar-toggle" onClick={this.handleNav}>
-          <FontAwesomeIcon icon="bars" />
+          <FontAwesomeIcon color="#38BEC9" icon="bars" />
         </button>
 
         <div className={showNav ? "mainNav active" : "mainNav"}>
           <ul className="navBarListWrapper">
             <li className="navBarListItem">
-              <button onClick={() => this.props.scrollto("home")}>Home</button>
+              <button
+                className="navbarBtn"
+                onClick={() => this.props.scrollto("home")}
+              >
+                Home
+              </button>
             </li>
-            <li
-              className="navBarListItem"
-              onClick={() => this.props.scrollto("about")}
-            >
-              What I use
+            <li className="navBarListItem">
+              <button
+                className="navbarBtn"
+                onClick={() => this.props.scrollto("about")}
+              >
+                What I use
+              </button>
             </li>
-            <li
-              className="navBarListItem"
-              onClick={() => this.props.scrollto("projects")}
-            >
-              My projects
+            <li className="navBarListItem">
+              <button
+                className="navbarBtn"
+                onClick={() => this.props.scrollto("projects")}
+              >
+                My projects
+              </button>
             </li>
-            <li
-              className="navBarListItem"
-              onClick={() => this.props.scrollto("footer")}
-            >
-              Contact Me
+            <li className="navBarListItem">
+              <button
+                className="navbarBtn"
+                onClick={() => this.props.scrollto("footer")}
+              >
+                Contact Me
+              </button>
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     );
   }
 }

@@ -12,15 +12,43 @@
   align-items: center;
   text-align: center;
 }
-.testwrapper {
+.projectsBtn {
+  color: hsl(213, 33%, 89%);
+  margin-top: 16px;
+  border: none;
+  background: hsl(185, 81%, 29%);
+  width: 119px;
+  height: 41px;
+  border-radius: 6px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.resumeBtn {
+  color: hsl(213, 33%, 89%);
+  cursor: pointer;
+  margin-top: 16px;
+  border: none;
+  background: hsl(185, 81%, 29%);
+  width: 119px;
+  height: 41px;
+  border-radius: 6px;
+}
+.projectsBtn:hover {
+  border: 1px solid hsl(210, 36%, 73%);
+}
+.resumeBtn:hover {
+  border: 1px solid hsl(210, 36%, 73%);
+}
+.aboutwrapper {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-duration: 1s;
 }
-.testText {
+.aboutText {
   color: hsl(213, 33%, 89%);
+  padding-bottom: 20px;
 }
 @keyframes fadeIn {
   from {

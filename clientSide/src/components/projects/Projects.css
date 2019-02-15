@@ -1,3 +1,45 @@
 .projectsWrapper {
-  height: 100vh;
+  height: 100%;
+}
+.pokedexContainer {
+  margin: 0 auto;
+  width: 88%;
+  background: #f0f4f4;
+  height: auto;
+  border-radius: 16px;
+  padding-bottom: 20px;
+}
+.reactdexDescContainer {
+  margin: 0 auto;
+  width: 95%;
+  height: auto;
+  padding-top: 11px;
+}
+.projectImg {
+  width: 100%;
+}
+.projectName {
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.projectDescContainer {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  background: #fdfdfd;
+  position: relative;
+  bottom: 4px;
+}
+.projectTechs {
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 2px solid hsl(185, 62%, 45%);
+  -webkit-justify-content: space-evenly;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+.projectDesc {
+  padding-top: 22px;
+  width: 220px;
+  margin: 0 auto;
 }

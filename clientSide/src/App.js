@@ -14,7 +14,6 @@ library.add(faBars);
 
 class App extends Component {
   scrollto = element => {
-    console.log(element);
     scroller.scrollTo(`${element}`, {
       duration: 500,
       delay: 0,

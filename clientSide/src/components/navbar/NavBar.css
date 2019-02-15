@@ -2,10 +2,10 @@
   position: sticky;
   top: 0px;
   background: hsl(209, 28%, 39%);
+  border-bottom: 2px solid hsl(185, 57%, 50%);
 }
 .navbar-toggle {
   position: absolute;
-  /* color: black; */
   background: transparent;
   border: none;
   right: 10px;
@@ -15,6 +15,14 @@
 }
 .mainNav {
   display: none;
+}
+.navbarBtn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: hsl(209, 31%, 95%);
+  outline: none;
+  cursor: pointer;
 }
 .navBarListWrapper {
   margin: 0;
