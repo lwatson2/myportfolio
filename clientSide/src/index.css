@@ -18,6 +18,9 @@ code {
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 * {
   margin: 0;
   padding: 0;

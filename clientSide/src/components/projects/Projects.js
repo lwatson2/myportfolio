@@ -7,13 +7,15 @@ export default class Projects extends Component {
     return (
       <div className="projectsWrapper">
         <div className="pokedexContainer">
+          <h2 className="projectName"> React-Pokedex </h2>
           <div className="reactdexDescContainer">
-            <h2 className="projectName"> React-Pokedex </h2>
-            <img
-              className="projectImg"
-              src={reactpokedex}
-              alt="react-pokedex"
-            />
+            <div className="projectImgContainer">
+              <img
+                className="projectImg"
+                src={reactpokedex}
+                alt="react-pokedex"
+              />
+            </div>
             <div className="projectDescContainer">
               <div className="projectTechs">
                 <p>Technologies I used:</p>
@@ -24,8 +26,28 @@ export default class Projects extends Component {
                   React-Pokedex is a database where users can look up pokemon by
                   name or id and view details about that pokemon. Data is
                   gathered from{" "}
-                  <a href="https://pokeapi.co/">https://pokeapi.co/.</a>
+                  <a className="pokeApiLink" href="https://pokeapi.co/">
+                    https://pokeapi.co/.
+                  </a>
                 </p>
+              </div>
+              <div className="btnWrapper">
+                <button className="projectLinkBtn">
+                  <a
+                    className="projectLink"
+                    href="https://lwatson2.github.io/react-pokedex/"
+                  >
+                    View App
+                  </a>
+                </button>
+                <button className="projectLinkBtn">
+                  <a
+                    className="projectLink"
+                    href="https://github.com/lwatson2/react-pokedex"
+                  >
+                    View Code
+                  </a>
+                </button>
               </div>
             </div>
           </div>
