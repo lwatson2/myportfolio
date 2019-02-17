@@ -1,7 +1,7 @@
 .projectsWrapper {
   height: 100%;
 }
-.pokedexContainer {
+.projectContainer {
   margin: 0 auto;
   width: 94%;
   background: #f0f4f4;
@@ -9,12 +9,16 @@
   border-radius: 16px;
   padding-bottom: 20px;
   color: hsl(209, 34%, 30%);
+  margin-bottom: 50px;
 }
 .reactdexDescContainer {
   margin: 0 auto;
   width: 88%;
   height: auto;
   padding-top: 11px;
+}
+.techList {
+  width: 46%;
 }
 .projectImg {
   width: 100%;
@@ -26,8 +30,6 @@
 }
 .projectDescContainer {
   padding-top: 20px;
-
-  background: #fdfdfd;
   position: relative;
   bottom: 4px;
 }
@@ -49,7 +51,6 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 13px;
-  background: #f0f4f4;
 }
 .projectLinkBtn {
   border: none;
@@ -61,16 +62,23 @@
   height: 50px;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+.projectLinkBtn:hover {
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
 }
 
 .projectLink {
-  color: hsl(210, 36%, 90%);
+  color: hsl(210, 36%, 99%);
 }
 
 .pokeApiLink {
   color: hsl(184, 91%, 21%);
 }
-@media only screen and (min-width: 600px) {
+.socketIoLink {
+  color: hsl(184, 91%, 21%);
+}
+@media only screen and (min-width: 700px) and (max-width: 991px) {
   .projectDesc {
     width: 359px;
     font-size: 18px;
@@ -82,6 +90,33 @@
     padding-right: 17px;
     background: none;
     width: 100%;
+  }
+  .projectImgContiner {
+    width: 100%;
+  }
+
+  .reactdexDescContainer {
+    margin: 0 auto;
+    display: flex;
+    width: 88%;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 11px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .projectDesc {
+    width: 359px;
+    font-size: 18px;
+  }
+  .projectTechs {
+    font-size: 18px;
+  }
+  .projectDescContainer {
+    background: none;
+    width: 50%;
+    margin: 0 auto;
+    right: 51px;
   }
   .projectImgContiner {
     width: 100%;

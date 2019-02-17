@@ -17,7 +17,8 @@ class App extends Component {
     scroller.scrollTo(`${element}`, {
       duration: 500,
       delay: 0,
-      smooth: true
+      smooth: true,
+      offset: -60
     });
   };
   render() {

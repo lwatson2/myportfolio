@@ -22,7 +22,13 @@
   font-size: 18px;
   color: hsl(209, 31%, 95%);
   outline: none;
+  width: 104px;
   cursor: pointer;
+  height: 42px;
+  border-radius: 8px;
+}
+.navbarBtn:hover {
+  background: hsl(209, 28%, 32%);
 }
 .navBarListWrapper {
   margin: 0;

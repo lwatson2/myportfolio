@@ -13,10 +13,10 @@
   text-align: center;
 }
 .projectsBtn {
-  color: hsl(213, 33%, 89%);
+  color: hsl(213, 33%, 97%);
   margin-top: 16px;
   border: none;
-  background: hsl(185, 81%, 29%);
+  background: hsl(185, 81%, 27%);
   width: 119px;
   height: 41px;
   border-radius: 6px;
@@ -24,11 +24,11 @@
   cursor: pointer;
 }
 .resumeBtn {
-  color: hsl(213, 33%, 89%);
+  color: hsl(213, 33%, 97%);
   cursor: pointer;
   margin-top: 16px;
   border: none;
-  background: hsl(185, 81%, 29%);
+  background: hsl(185, 81%, 27%);
   width: 119px;
   height: 41px;
   border-radius: 6px;
