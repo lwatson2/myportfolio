@@ -7,7 +7,8 @@ import simpleimagegallery from "../../images/Simple-image-gallery.png";
 export default class Projects extends Component {
   render() {
     return (
-      <div className="projectsWrapper">
+      <main className="projectsWrapper">
+        <h2 className="h2Projects">My projects</h2>
         <div className="projectContainer">
           <h2 className="projectName"> ReactChat </h2>
           <div className="reactdexDescContainer">
@@ -144,7 +145,7 @@ export default class Projects extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }

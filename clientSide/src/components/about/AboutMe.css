@@ -1,3 +1,46 @@
 .aboutWrapper {
-  height: 100vh;
+  height: 50vh;
+  padding-top: 70px;
+}
+.techWrapper {
+  text-align: center;
+}
+.h2Tech {
+  padding-bottom: 35px;
+}
+.iconWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.technameWrapper {
+  position: relative;
+  background: hsl(210, 31%, 89%);
+  text-align: center;
+  top: 10px;
+  display: flex;
+  height: 27px;
+  color: hsl(209, 61%, 16%);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.technameWrapper:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(159, 179, 200, 0);
+  border-bottom-color: hsl(210, 31%, 89%);
+  border-width: 5px;
+  margin-left: -5px;
+}
+@media only screen and (max-width: 600px) {
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
 }
