@@ -7,7 +7,10 @@ export default class NavBar extends Component {
   state = {
     showNav: false
   };
-  handleNav = () => {
+  handleNav = name => {
+    if (name) {
+      this.props.scrollto(name);
+    }
     this.setState({ showNav: !this.state.showNav });
   };
 
@@ -24,7 +27,7 @@ export default class NavBar extends Component {
             <li className="navBarListItem">
               <button
                 className="navbarBtn"
-                onClick={() => this.props.scrollto("home")}
+                onClick={() => this.handleNav("home")}
               >
                 Home
               </button>
@@ -32,7 +35,7 @@ export default class NavBar extends Component {
             <li className="navBarListItem">
               <button
                 className="navbarBtn"
-                onClick={() => this.props.scrollto("about")}
+                onClick={() => this.handleNav("about")}
               >
                 What I use
               </button>
@@ -40,7 +43,7 @@ export default class NavBar extends Component {
             <li className="navBarListItem">
               <button
                 className="navbarBtn"
-                onClick={() => this.props.scrollto("projects")}
+                onClick={() => this.handleNav("projects")}
               >
                 My projects
               </button>
@@ -48,7 +51,7 @@ export default class NavBar extends Component {
             <li className="navBarListItem">
               <button
                 className="navbarBtn"
-                onClick={() => this.props.scrollto("footer")}
+                onClick={() => this.handleNav("contact")}
               >
                 Contact Me
               </button>

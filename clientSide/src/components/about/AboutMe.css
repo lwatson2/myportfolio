@@ -7,6 +7,11 @@
 }
 .h2Tech {
   padding-bottom: 35px;
+  color: hsl(209, 61%, 16%);
+}
+.icon {
+  width: 100px;
+  height: 100px;
 }
 .iconWrapper {
   display: flex;
@@ -42,5 +47,32 @@
   .icon {
     width: 60px;
     height: 60px;
+  }
+  .htmlIconWrapper {
+    flex: 0 0 33%;
+    padding-bottom: 30px;
+  }
+  .cssIconWrapper {
+    flex: 0 0 33%;
+    padding-bottom: 30px;
+  }
+  .gitIconWrapper {
+    flex: 0 0 33%;
+    padding-bottom: 30px;
+  }
+  .nodeIconWrapper {
+    flex: 0 0 33%;
+    padding-bottom: 30px;
+  }
+  .mongoIconWrapper {
+    flex: 0 0 33%;
+    padding-bottom: 30px;
+  }
+  .reactIconWrapper {
+    flex: 0 0 33%;
+    padding-bottom: 30px;
+  }
+  .iconWrapper {
+    flex-wrap: wrap;
   }
 }

@@ -3,7 +3,7 @@ import "./App.css";
 import AboutMe from "./components/about/AboutMe";
 import Homepage from "./components/homepage/Homepage";
 import Projects from "./components/projects/Projects";
-import Footer from "./components/footer/Footer";
+import Contact from "./components/contact/Contact";
 import NavBar from "./components/navbar/NavBar";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -38,8 +38,8 @@ class App extends Component {
             <Element name="projects">
               <Projects />
             </Element>
-            <Element name="footer">
-              <Footer />
+            <Element name="contact">
+              <Contact />
             </Element>
           </div>
         </div>

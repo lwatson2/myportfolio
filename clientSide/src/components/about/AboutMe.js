@@ -4,6 +4,8 @@ import nodeicon from "../../images/icons8-nodejs.svg";
 import mongodbicon from "../../images/icons8-mongodb.svg";
 import giticon from "../..//images/git-seeklogo.com.svg";
 import reacticon from "../../images/react.svg";
+import htmlIcon from "../../images/html5-with-wordmark-color.svg";
+import cssIcon from "../../images/css3-seeklogo.com.svg";
 
 export default class AboutMe extends Component {
   state = {
@@ -20,6 +22,10 @@ export default class AboutMe extends Component {
         return this.setState({ showTech: true, techName: "mongodb" });
       case "react":
         return this.setState({ showTech: true, techName: "react" });
+      case "html":
+        return this.setState({ showTech: true, techName: "html" });
+      case "css":
+        return this.setState({ showTech: true, techName: "css" });
       default:
         return null;
     }
@@ -28,6 +34,7 @@ export default class AboutMe extends Component {
     this.setState({ showTech: false, techName: "" });
   };
   render() {
+    const { techName, showTech } = this.state;
     return (
       <main className="aboutWrapper">
         <div className="techWrapper">
@@ -35,6 +42,40 @@ export default class AboutMe extends Component {
             These are the technologies I have worked with and are familiar with.
           </h2>
           <div className="iconWrapper">
+            <div className="htmlIconWrapper">
+              <img
+                src={htmlIcon}
+                className="icon"
+                alt="html5 icon"
+                onMouseEnter={() => this.handleMouseEnter("html")}
+                onMouseLeave={this.handleMouseLeave}
+              />
+
+              {techName === "html" ? (
+                <div className="technameWrapper">
+                  <span>Html5</span>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
+            <div className="cssIconWrapper">
+              <img
+                src={cssIcon}
+                className="icon"
+                alt="css3 icon"
+                onMouseEnter={() => this.handleMouseEnter("css")}
+                onMouseLeave={this.handleMouseLeave}
+              />
+
+              {techName === "css" ? (
+                <div className="technameWrapper">
+                  <span>Css3</span>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
             <div className="gitIconWrapper">
               <img
                 className="icon"
