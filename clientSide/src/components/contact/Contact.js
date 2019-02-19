@@ -24,39 +24,59 @@ export default class Contact extends Component {
   render() {
     return (
       <main className="contactFormWrapper">
-        <p>Contact me </p>
+        <h3 className="contactMeText">
+          Contact me on{" "}
+          <a
+            href="https://linkedin.com/in/loganawatson"
+            className="linkedInLink"
+          >
+            LinkedIn
+          </a>{" "}
+          or email me.
+        </h3>
         <div className="formWrapper">
           <form onSubmit={this.handleSubmit} className="contactForm">
-            <label className="formLabel">Name</label>
-            <input
-              type="text"
-              value={this.state.nameValue}
-              onChange={this.handleNameChange}
-              className="formField"
-            />
-            <label className="formLabel">Email</label>
-            <input
-              type="text"
-              value={this.state.emailValue}
-              onChange={this.handleEmailChange}
-              className="formField"
-            />
-            <label className="formLabel">Subject</label>
-            <input
-              type="text"
-              value={this.state.subjectValue}
-              onChange={this.handleSubjectChange}
-              className="formField"
-            />
-            <label className="formLabel">Message</label>
-            <textarea
-              type="text"
-              rows="5"
-              cols="30"
-              value={this.state.messageValue}
-              onChange={this.handleMessageChange}
-              className="messageField"
-            />
+            <label className="formLabel">
+              Name
+              <input
+                type="text"
+                value={this.state.nameValue}
+                onChange={this.handleNameChange}
+                className="formField"
+              />
+            </label>
+            <label className="formLabel">
+              Email
+              <input
+                type="text"
+                value={this.state.emailValue}
+                onChange={this.handleEmailChange}
+                className="formField"
+              />
+            </label>
+            <label className="formLabel">
+              Subject
+              <input
+                type="text"
+                value={this.state.subjectValue}
+                onChange={this.handleSubjectChange}
+                className="formField"
+              />
+            </label>
+            <label className="formLabel">
+              Message
+              <textarea
+                type="text"
+                rows="5"
+                cols="30"
+                value={this.state.messageValue}
+                onChange={this.handleMessageChange}
+                className="messageField"
+              />
+            </label>
+            <button type="submit" className="contactBtn">
+              Submit
+            </button>
           </form>
         </div>
       </main>

@@ -15,21 +15,56 @@
   margin: 0 auto;
   color: hsl(209, 61%, 16%);
 }
+.contactMeText {
+  text-align: center;
+  padding-bottom: 40px;
+  color: hsl(209, 61%, 16%);
+}
+.linkedInLink {
+  color: hsl(184, 91%, 30%);
+}
 .formField {
   width: 100%;
   border: none;
+  margin-top: 10px;
   outline: none;
   background: transparent;
   color: hsl(209, 61%, 16%);
+  border-bottom: 1px solid hsl(209, 61%, 16%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  padding-bottom: 5px;
+}
+.formField:focus {
   border-bottom: 1px solid hsl(184, 57%, 50%);
 }
 .formLabel {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.footer {
-  height: 25vh;
+.messageField {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
 }
+.contactBtn {
+  color: hsl(212, 33%, 89%);
+  margin: 0 auto;
+  border: none;
+  background: hsl(185, 81%, 29%);
+  width: 132px;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 13px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+  margin-top: 10px;
+}
+.contactBtn:hover {
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+
 @media only screen and (max-width: 600px) {
   .formWrapper {
     width: 86%;

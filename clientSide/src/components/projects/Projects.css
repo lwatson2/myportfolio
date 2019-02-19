@@ -79,10 +79,10 @@
 }
 
 .pokeApiLink {
-  color: hsl(184, 91%, 40%);
+  color: hsl(184, 91%, 23%);
 }
 .socketIoLink {
-  color: hsl(184, 91%, 40%);
+  color: hsl(184, 91%, 23%);
 }
 @media only screen and (min-width: 700px) and (max-width: 991px) {
   .projectDesc {

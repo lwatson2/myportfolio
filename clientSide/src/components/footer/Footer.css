@@ -1,0 +1,25 @@
+.footerWrapper {
+  position: static;
+  bottom: 0;
+  background: hsl(209, 28%, 39%);
+  height: 55px;
+  margin-top: 50px;
+}
+.linkedInIcon {
+  width: 50px;
+}
+.githubIcon {
+  width: 50px;
+}
+.footerIconWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.scrollToTopBtn {
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  bottom: 25px;
+  cursor: pointer;
+}

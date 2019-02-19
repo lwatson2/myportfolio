@@ -6,11 +6,12 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import NavBar from "./components/navbar/NavBar";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faAngleDoubleUp } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter } from "react-router-dom";
 import { Element, scroller } from "react-scroll";
+import Footer from "./components/footer/Footer";
 
-library.add(faBars);
+library.add(faBars, faAngleDoubleUp);
 
 class App extends Component {
   scrollto = element => {
@@ -42,6 +43,7 @@ class App extends Component {
               <Contact />
             </Element>
           </div>
+          <Footer scrollTo={this.scrollto} />
         </div>
       </BrowserRouter>
     );
