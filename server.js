@@ -4,15 +4,21 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000;
 const app = express();
-const router = express.Router();
+
 app.use(bodyParser.json());
 const server = app.listen(PORT, console.log(`server started on ${PORT}`));
 
 const transport = {
   host: "smtp.gmail.com",
+  secure: true,
   auth: {
+    type: "OAuth2",
     user: creds.USER,
-    pass: creds.PASS
+
+    clientId: creds.CLIENT_ID,
+    clientSecret: creds.CLIENT_SECRET,
+    refreshToken: creds.REFRESH_TOKEN,
+    accessToken: creds.ACCESS_TOKEN
   }
 };
 
@@ -25,14 +31,17 @@ transporter.verify((error, success) => {
     console.log("server is ready to take messages");
   }
 });
-
-router.post("/sendmail", (req, res, next) => {
+app.get("/test", (req, res) => {
+  console.log("test");
+});
+app.post("/sendmail", (req, res, next) => {
+  console.log("test");
   const { name, email, subject, message } = req.body;
   const content = `name: ${name} /n email: ${email} /n subject: ${subject} /n message: ${message} `;
 
   const mail = {
     from: name,
-    to: creds.USER,
+    to: creds.EMAIL,
     subject: "New message from contact form in portfolio",
     text: content
   };
@@ -46,6 +55,7 @@ router.post("/sendmail", (req, res, next) => {
       res.json({
         success: true
       });
+      console.log("mail sent");
     }
   });
 });

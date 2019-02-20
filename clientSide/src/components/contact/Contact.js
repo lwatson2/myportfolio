@@ -9,6 +9,9 @@ export default class Contact extends Component {
     emailValue: "",
     subjectValue: ""
   };
+  componentDidMount() {
+    axios.get("/test");
+  }
   handleSubjectChange = e => {
     this.setState({ subjectValue: e.target.value });
   };
@@ -22,7 +25,8 @@ export default class Contact extends Component {
   handleMessageChange = e => {
     this.setState({ messageValue: e.target.value });
   };
-  handleSubmit = () => {
+  handleSubmit = async e => {
+    e.preventDefault();
     const { nameValue, messageValue, emailValue, subjectValue } = this.state;
     let data = {
       name: nameValue,
@@ -31,7 +35,7 @@ export default class Contact extends Component {
       message: messageValue
     };
     // Submit data from contact form to backend to send email
-    axios.post("/sendmail", data);
+    const res = await axios.post("/sendmail", data);
   };
   render() {
     return (
