@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import "./Contact.css";
 
 export default class Contact extends Component {
@@ -20,6 +21,17 @@ export default class Contact extends Component {
   };
   handleMessageChange = e => {
     this.setState({ messageValue: e.target.value });
+  };
+  handleSubmit = () => {
+    const { nameValue, messageValue, emailValue, subjectValue } = this.state;
+    let data = {
+      name: nameValue,
+      email: emailValue,
+      subject: subjectValue,
+      message: messageValue
+    };
+    // Submit data from contact form to backend to send email
+    axios.post("/sendmail", data);
   };
   render() {
     return (
