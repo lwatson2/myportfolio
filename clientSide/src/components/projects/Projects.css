@@ -60,15 +60,18 @@
 }
 .projectLinkBtn {
   border: none;
-  /* color: hsl(209, 33%, 89%); */
   margin-top: 35px;
   margin-bottom: 11px;
   background: hsl(185, 81%, 29%);
   width: 84px;
+  display: flex;
   height: 50px;
+  justify-content: center;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+  align-items: center;
+  font-size: 14px;
 }
 .projectLinkBtn:hover {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);

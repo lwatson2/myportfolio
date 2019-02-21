@@ -16,6 +16,7 @@
   color: hsl(213, 33%, 97%);
   margin-top: 16px;
   border: none;
+  font-size: 14px;
   background: hsl(185, 81%, 27%);
   width: 119px;
   height: 41px;
@@ -23,15 +24,27 @@
   margin-right: 20px;
   cursor: pointer;
 }
+.homepageBtnWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
 .resumeBtn {
-  color: hsl(213, 33%, 97%);
   cursor: pointer;
+  font-size: 14px;
   margin-top: 16px;
   border: none;
   background: hsl(185, 81%, 27%);
   width: 119px;
   height: 41px;
+  display: flex;
   border-radius: 6px;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.resumeLink {
+  color: hsl(213, 33%, 97%);
 }
 .projectsBtn:hover {
   border: 1px solid hsl(210, 36%, 73%);

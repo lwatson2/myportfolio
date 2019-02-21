@@ -24,7 +24,12 @@ export default class Projects extends Component {
                 <p>Technologies I used:</p>
                 <p className="techList">
                   React, Node, MongoDb, and{" "}
-                  <a className="socketIoLink" href="https://socket.io/">
+                  <a
+                    className="socketIoLink"
+                    href="https://socket.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     socket.io
                   </a>
                 </p>
@@ -37,22 +42,26 @@ export default class Projects extends Component {
                 </p>
               </div>
               <div className="btnWrapper">
-                <button className="projectLinkBtn">
+                <div className="projectLinkBtn">
                   <a
                     className="projectLink"
-                    href="https://floating-woodland-27702.herokuapp.com/groups/welcome"
+                    href="https://floating-woodland-27702.herokuapp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View App
                   </a>
-                </button>
-                <button className="projectLinkBtn">
+                </div>
+                <div className="projectLinkBtn">
                   <a
                     className="projectLink"
                     href="https://github.com/lwatson2/wechatapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Code
                   </a>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -79,22 +88,26 @@ export default class Projects extends Component {
                 </p>
               </div>
               <div className="btnWrapper">
-                <button className="projectLinkBtn">
+                <div className="projectLinkBtn">
                   <a
                     className="projectLink"
                     href="https://aqueous-mesa-52857.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View App
                   </a>
-                </button>
-                <button className="projectLinkBtn">
+                </div>
+                <div className="projectLinkBtn">
                   <a
                     className="projectLink"
                     href="https://github.com/lwatson2/imagegallery"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Code
                   </a>
-                </button>
+                </div>
               </div>
             </div>
           </div>
@@ -119,28 +132,37 @@ export default class Projects extends Component {
                   React-Pokedex is a database where users can look up pokemon by
                   name or id and view details about that pokemon. Data is
                   gathered from{" "}
-                  <a className="pokeApiLink" href="https://pokeapi.co/">
+                  <a
+                    className="pokeApiLink"
+                    href="https://pokeapi.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     https://pokeapi.co/.
                   </a>
                 </p>
               </div>
               <div className="btnWrapper">
-                <button className="projectLinkBtn">
+                <div className="projectLinkBtn">
                   <a
                     className="projectLink"
                     href="https://lwatson2.github.io/react-pokedex/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View App
                   </a>
-                </button>
-                <button className="projectLinkBtn">
+                </div>
+                <div className="projectLinkBtn">
                   <a
                     className="projectLink"
                     href="https://github.com/lwatson2/react-pokedex"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     View Code
                   </a>
-                </button>
+                </div>
               </div>
             </div>
           </div>
