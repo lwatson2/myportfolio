@@ -39,7 +39,7 @@ export default class AboutMe extends Component {
       <main className="aboutWrapper">
         <div className="techWrapper">
           <h2 className="h2Tech">
-            These are the technologies I have worked with and are familiar with.
+            These are the technologies I have experience with.
           </h2>
           <div className="iconWrapper">
             <div className="htmlIconWrapper">

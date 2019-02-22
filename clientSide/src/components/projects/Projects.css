@@ -87,6 +87,12 @@
 .socketIoLink {
   color: hsl(184, 91%, 23%);
 }
+.socketIoLink:hover {
+  border-bottom: 1px solid;
+}
+.pokeApiLink:hover {
+  border-bottom: 1px solid;
+}
 @media only screen and (min-width: 700px) and (max-width: 991px) {
   .projectDesc {
     width: 359px;

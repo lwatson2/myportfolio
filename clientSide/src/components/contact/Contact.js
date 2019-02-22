@@ -7,7 +7,10 @@ export default class Contact extends Component {
     nameValue: "",
     messageValue: "",
     emailValue: "",
-    subjectValue: ""
+    subjectValue: "",
+    success: false,
+    error: false,
+    errMsg: ""
   };
   componentDidMount() {
     axios.get("/test");
@@ -16,7 +19,6 @@ export default class Contact extends Component {
     this.setState({ subjectValue: e.target.value });
   };
   handleNameChange = e => {
-    console.log("object");
     this.setState({ nameValue: e.target.value });
   };
   handleEmailChange = e => {
@@ -34,10 +36,32 @@ export default class Contact extends Component {
       subject: subjectValue,
       message: messageValue
     };
+    if (
+      nameValue === "" ||
+      emailValue === "" ||
+      subjectValue === "" ||
+      messageValue === ""
+    ) {
+      return this.setState({ error: true, errMsg: "All forms are required" });
+    }
     // Submit data from contact form to backend to send email
     const res = await axios.post("/sendmail", data);
+    //If email is sent clear state and show success message
+    if (res.data.success) {
+      return this.setState({
+        success: true,
+        nameValue: "",
+        messageValue: "",
+        subjectValue: "",
+        emailValue: ""
+      });
+    } else {
+      // Else show error message
+      return this.setState({ error: true, errMsg: "Oops! Please try again." });
+    }
   };
   render() {
+    const { error, errMsg, success } = this.state;
     return (
       <main className="contactFormWrapper">
         <h3 className="contactMeText">
@@ -50,6 +74,16 @@ export default class Contact extends Component {
           </a>{" "}
           or email me.
         </h3>
+        {error && (
+          <div className="errorMessageDiv">
+            <span>{errMsg}</span>
+          </div>
+        )}
+        {success && (
+          <div className="successMessageDiv">
+            <span>Message sent.</span>
+          </div>
+        )}
         <div className="formWrapper">
           <form onSubmit={this.handleSubmit} className="contactForm">
             <label className="formLabel">

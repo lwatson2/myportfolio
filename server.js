@@ -8,6 +8,15 @@ const app = express();
 app.use(bodyParser.json());
 const server = app.listen(PORT, console.log(`server started on ${PORT}`));
 
+//Config for production
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(__dirname + "/clientSide/build"));
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname + "/clientSide/build/index.html"));
+  });
+}
+
 const transport = {
   host: "smtp.gmail.com",
   secure: true,
@@ -31,13 +40,10 @@ transporter.verify((error, success) => {
     console.log("server is ready to take messages");
   }
 });
-app.get("/test", (req, res) => {
-  console.log("test");
-});
+
 app.post("/sendmail", (req, res, next) => {
-  console.log("test");
   const { name, email, subject, message } = req.body;
-  const content = `name: ${name} /n email: ${email} /n subject: ${subject} /n message: ${message} `;
+  const content = `name: ${name}  email: ${email}  subject: ${subject} message: ${message} `;
 
   const mail = {
     from: name,
@@ -55,7 +61,6 @@ app.post("/sendmail", (req, res, next) => {
       res.json({
         success: true
       });
-      console.log("mail sent");
     }
   });
 });

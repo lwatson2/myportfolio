@@ -17,11 +17,14 @@
 }
 .contactMeText {
   text-align: center;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   color: hsl(209, 61%, 16%);
 }
 .linkedInLink {
   color: hsl(184, 91%, 30%);
+}
+.linkedInLink:hover {
+  border-bottom: 1px solid;
 }
 .formField {
   width: 100%;
@@ -60,6 +63,36 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
   margin-top: 10px;
+}
+.errorMessageDiv {
+  background: #ff0033;
+  width: 209px;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  height: 40px;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  color: hsl(210, 36%, 99%);
+  opacity: 0.8;
+  position: relative;
+  bottom: 16px;
+}
+.successMessageDiv {
+  background: #4bb543;
+  width: 209px;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  height: 40px;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  color: hsl(210, 36%, 99%);
+  opacity: 0.8;
+  position: relative;
+  bottom: 16px;
 }
 .contactBtn:hover {
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
