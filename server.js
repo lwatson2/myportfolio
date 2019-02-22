@@ -23,10 +23,10 @@ const transport = {
   auth: {
     type: "OAuth2",
     user: process.env.USER, //|| creds.USER,
-    clientId: proccess.env.CLIENT_ID, // || creds.CLIENT_ID,
-    clientSecret: proccess.env.CLIENT_SECRET, // || creds.CLIENT_SECRET,
-    refreshToken: proccess.env.REFRESH_TOKEN, // || creds.REFRESH_TOKEN,
-    accessToken: proccess.env.ACCESS_TOKEN // || creds.ACCESS_TOKEN
+    clientId: process.env.CLIENT_ID, // || creds.CLIENT_ID,
+    clientSecret: process.env.CLIENT_SECRET, // || creds.CLIENT_SECRET,
+    refreshToken: process.env.REFRESH_TOKEN, // || creds.REFRESH_TOKEN,
+    accessToken: process.env.ACCESS_TOKEN // || creds.ACCESS_TOKEN
   }
 };
 
@@ -46,7 +46,7 @@ app.post("/sendmail", (req, res, next) => {
 
   const mail = {
     from: name,
-    to: proccess.env.EMAIL, // || creds.EMAIL,
+    to: process.env.EMAIL, // || creds.EMAIL,
     subject: "New message from contact form in portfolio",
     text: content
   };
