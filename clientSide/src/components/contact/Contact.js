@@ -42,7 +42,11 @@ export default class Contact extends Component {
       subjectValue === "" ||
       messageValue === ""
     ) {
-      return this.setState({ error: true, errMsg: "All forms are required" });
+      return this.setState({
+        success: false,
+        error: true,
+        errMsg: "All forms are required"
+      });
     }
     // Submit data from contact form to backend to send email
     const res = await axios.post("/sendmail", data);
