@@ -20,7 +20,7 @@ export default class Homepage extends Component {
             <div className="resumeBtn">
               <a
                 className="resumeLink"
-                href={resume}
+                // href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
               >
