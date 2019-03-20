@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Homepage.css";
-import resume from "../../resume/Logan Watson resume.pdf";
+import resume from "../../resume/Logan Watson Resume ..pdf";
 
 export default class Homepage extends Component {
   render() {
@@ -20,7 +20,7 @@ export default class Homepage extends Component {
             <div className="resumeBtn">
               <a
                 className="resumeLink"
-                // href={resume}
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
               >
