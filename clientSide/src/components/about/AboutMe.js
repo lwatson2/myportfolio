@@ -5,7 +5,6 @@ import mongodbicon from "../../images/icons8-mongodb.svg";
 import giticon from "../..//images/git-seeklogo.com.svg";
 import reacticon from "../../images/react.svg";
 import npmIcon from "../../images/npm-node-package-manager.svg";
-import cssIcon from "../../images/css3-seeklogo.com.svg";
 
 export default class AboutMe extends Component {
   state = {
