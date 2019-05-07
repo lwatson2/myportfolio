@@ -91,7 +91,7 @@ export default class Projects extends Component {
                 <div className="projectLinkBtn">
                   <a
                     className="projectLink"
-                    href="https://aqueous-mesa-52857.herokuapp.com/"
+                    href="http://www.danielleleephotography.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
