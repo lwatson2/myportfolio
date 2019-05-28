@@ -3,6 +3,7 @@ import "./Projects.css";
 import reactpokedex from "../../images/React-Pokedex.png";
 import reactChat from "../../images/React-chat.png";
 import simpleimagegallery from "../../images/Simple-image-gallery.png";
+import buddyFinder from "../../images/buddyfinder.png";
 
 export default class Projects extends Component {
   render() {
@@ -10,8 +11,57 @@ export default class Projects extends Component {
       <main className="projectsWrapper">
         <h2 className="h2Projects">My projects</h2>
         <div className="projectContainer">
-          <h2 className="projectName"> ReactChat </h2>
-          <div className="reactdexDescContainer">
+          <p className="projectName">Buddy Finder</p>
+          <div className="projectsDescContainer">
+            <div className="projectImgContainer">
+              <img
+                className="projectImg"
+                src={buddyFinder}
+                alt="Buddy finder screenshot"
+              />
+            </div>
+            <div className="projectDescContainer">
+              <div className="projectTechs">
+                <p>Technologies I used</p>
+                <p className="techList">React, Node, and MongoDB.</p>
+              </div>
+              <div className="projectDesc">
+                <p>
+                  Buddy Finder is a website where gamers can post a group for
+                  people to join so they never have to play alone. Users can
+                  join groups and get notified when a group is ready. Features a
+                  passport login system, a way to update user creditials, and
+                  push notifications when a users group is ready
+                </p>
+              </div>
+              <div className="btnWrapper">
+                <div className="projectLinkBtn">
+                  <a
+                    className="projectLink"
+                    href="https://buddyfindersite.herokuapp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View App
+                  </a>
+                </div>
+                <div className="projectLinkBtn">
+                  <a
+                    className="projectLink"
+                    href="https://github.com/lwatson2/buddyFinder"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="projectContainer">
+          <p className="projectName"> ReactChat </p>
+          <div className="projectsDescContainer">
             <div className="projectImgContainer">
               <img
                 className="projectImg"
@@ -67,8 +117,8 @@ export default class Projects extends Component {
           </div>
         </div>
         <div className="projectContainer">
-          <h2 className="projectName"> Simple image gallery</h2>
-          <div className="reactdexDescContainer">
+          <p className="projectName"> Simple image gallery</p>
+          <div className="projectsDescContainer">
             <div className="projectImgContainer">
               <img
                 className="projectImg"
@@ -113,8 +163,8 @@ export default class Projects extends Component {
           </div>
         </div>
         <div className="projectContainer">
-          <h2 className="projectName"> React-Pokedex </h2>
-          <div className="reactdexDescContainer">
+          <p className="projectName"> React-Pokedex </p>
+          <div className="projectsDescContainer">
             <div className="projectImgContainer">
               <img
                 className="projectImg"

@@ -1,4 +1,5 @@
 .navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   background: hsl(209, 28%, 39%);
@@ -48,22 +49,34 @@
 }
 @media only screen and (min-width: 768px) {
   .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-bottom: 0px;
-    height: 70px;
-    align-items: center;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mainNav {
-    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* margin-right: 30px; */
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    -webkit-justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     justify-content: flex-start;
   }
   .active {
@@ -75,6 +88,8 @@
   }
 
   .navBarListWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .navBarListItem {

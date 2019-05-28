@@ -15,8 +15,10 @@
 .h2Projects {
   padding-bottom: 35px;
   color: hsl(209, 61%, 16%);
+  font-size: 31px;
+  margin-top: 54px;
 }
-.reactdexDescContainer {
+.projectsDescContainer {
   margin: 0 auto;
   width: 88%;
   height: auto;
@@ -32,6 +34,8 @@
   text-align: center;
   padding-bottom: 16px;
   padding-top: 16px;
+  font-weight: 700;
+  font-size: 19px;
 }
 .projectDescContainer {
   padding-top: 20px;
@@ -39,12 +43,16 @@
   bottom: 4px;
 }
 .projectTechs {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid hsl(185, 62%, 45%);
-  -webkit-justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding-bottom: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .projectDesc {
@@ -54,7 +62,11 @@
   padding-bottom: 10px;
 }
 .btnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding-top: 13px;
 }
@@ -64,16 +76,24 @@
   margin-bottom: 11px;
   background: hsl(185, 81%, 29%);
   width: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 50px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
   border-radius: 10px;
+  -webkit-box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 14px;
 }
 .projectLinkBtn:hover {
+  -webkit-box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
 }
 
@@ -110,11 +130,18 @@
     width: 100%;
   }
 
-  .reactdexDescContainer {
+  .projectsDescContainer {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 88%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 11px;
   }
@@ -137,11 +164,18 @@
     width: 100%;
   }
 
-  .reactdexDescContainer {
+  .projectsDescContainer {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 88%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-top: 11px;
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Homepage.css";
-import resume from "../../resume/Logan's Resume.pdf";
+import resume from "../../resume/Logan's_Resume.pdf";
 
 export default class Homepage extends Component {
   render() {
